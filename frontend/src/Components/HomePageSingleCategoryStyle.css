@@ -1,0 +1,136 @@
+/* -----------------------------------------------------------Main Box------------------------------------------------------- */
+#Box{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 330px;
+}
+/* -------------------------------------------Left Side Of Box--------------------------------------------------- */
+#LeftBox{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 2px;
+    padding: 28px 10px 124px;
+    width: 15%
+}
+#LeftBox>h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+#LeftBox>button{
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+/* -------------------------------------------Left Side Of Box Next & Previous Box--------------------------------------------------- */
+.NPproducts{
+    height: 120px;
+    width: 50px;
+    background-color: white;
+}
+.NPproducts>svg{
+    height: 120px;
+    width: 50px;
+}
+
+/* -------------------------------------------Right Side Of Box--------------------------------------------------- */
+#RightBox{
+    width: 85%;
+    overflow: hidden;
+}
+#RightBoxLeft{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84.5%;
+    margin-top: 90px;
+    scroll-behavior: smooth;
+}
+#RightBoxLeft>div:first-child{
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#RightBoxLeft>div:last-child{
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* --------------------------------------Right Side Of Box Single Product------------------------------------------- */
+#RightBoxRight{
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 15px;
+    height: 100%;
+}
+/* width */
+#RightBoxRight::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+  
+  /* Track */
+#RightBoxRight::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(198, 198, 198); 
+  border-radius: 0px;
+}
+   
+  /* Handle */
+#RightBoxRight::-webkit-scrollbar-thumb {
+  background: #2874f0;
+  border-radius: 0px;
+}
+  
+  /* Handle on hover */
+#RightBoxRight::-webkit-scrollbar-thumb:hover {
+  background: #1460da; 
+}
+.SingleProductBox{
+    width: 280px;
+    height: 305px;
+    padding: 20px;
+}
+.SingleProductBox:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.SingleProductBox>a>img{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: 170px;
+}
+.SingleProductBox>a>img:hover{
+    z-index: 100;
+    zoom: 101%;
+}
+.First{
+    font-weight: 500;
+    margin-top: 15px;
+}
+.Second{
+    color: #388e3c;
+    margin-top: 5px;
+}
+.Third{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #878787;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: auto;
+}

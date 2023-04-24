@@ -1,0 +1,35 @@
+#HomePage{
+    background-color: #f1f3f6;
+}
+/*----------------------------------- Sliding Images Css------------------------------------------------- */
+#SlidingImg{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/*----------------------------------- Sliding Images Next & Previous button Css------------------------------------------------- */
+#SlidingImg>div{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#SlidingImg>div>div:first-child{
+    border-radius: 0px 10px 10px 0px;
+}
+#SlidingImg>div>div:last-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.NPimg{
+    height: 120px;
+    width: 50px;
+    background-color: white;
+}
+.NPimg>svg{
+    height: 120px;
+    width: 50px;
+}

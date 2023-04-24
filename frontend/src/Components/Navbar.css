@@ -1,0 +1,214 @@
+/* ------------------------------------------------ Navbar Top Section Start ---------------------------------------------------------- */
+#NavbarTop{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 56px;
+    padding-left: 9%;
+    padding-right: 7.5%;
+}
+/*                                    Flipkart Logo                                    */
+#FlipLogo{
+    width: 75px;
+}
+#Logo>h1{
+    color: white;
+    font-size: 11px;
+    font-style: italic;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#Logo>h1>span{
+    color: #FFE500;
+    font-size: 11px;
+    font-style: italic;
+}
+#Logo>h1>img{
+    width: 11px;
+    height: 11px;
+}
+/*                                    NavbarTop Search Box                                    */
+#SearchBox>input{
+    width: 100%;
+    margin-left: 10px;
+}
+#SearchBox>input:focus{
+    outline: none;
+}
+#SearchBox{
+    display: flex;
+    background-color: white;
+    height: 65%;
+    align-items: center;
+    width: 43%;
+    justify-content: space-between;
+}
+#SearchBox>img{
+    height: 65%;
+    margin-right: 5px;
+}
+/*                                    NavbarTop Login Button                                    */
+#LoginButton{
+    height: 100%;
+}
+#LoginButton>button{
+    color: #2874f0;
+    background-color: white;
+    font-weight: 700;
+    width: 130px;
+    height: 33px;
+    margin-top: 10px;
+}
+/*                                NavbarTop Login Button Drop Down Menu                         */
+#LoginDropDown{
+    position: absolute;
+    z-index: 1100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: -60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+#LoginDropDown>a:hover{
+    background-color: whitesmoke;
+}
+#LoginDropDown>a:first-child>h1{
+    font-weight: 700;
+    color: black;
+}
+#LoginDropDown>a>img{
+    width: 20px;
+    margin-left: -5px;
+}
+#LoginDropDown>a:first-child{
+    font-weight: 700;
+    color: #2874f0;
+}
+#LoginDropDown>a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*                                    NavbarTop Become a seller                                    */
+#NavbarTop>#LoginButton+a{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+/*                                    NavbarTop More Section                                    */
+#NavbarTop>a+div{
+    height: 100%;
+}
+#NavbarTop>a+div>a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    height: 100%;
+}
+/*                                    NavbarTop Cart Section                                    */
+#NavbarTop>div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#NavbarTop>div:last-child>a{
+    font-size: 18px;
+    font-weight: 450;
+    color: white;
+}
+
+/*                                    NavbarTop More Section Drop Down Menu                                    */
+#MoreDetails{
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: -80px;
+    background-color: white;
+}
+#MoreDetails>div:hover{
+    background-color: whitesmoke;
+}
+#MoreDetails>div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+    padding: 20px;
+}
+#MoreDetails>div>a{
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ------------------------------------------------ Navbar Top Section End ---------------------------------------------------------- */
+
+
+/* ------------------------------------------------ Navbar Bottom Section Start ----------------------------------------------------- */
+#NavbarBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+#NavbarBottom>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#NavbarBottom>div>a>img{
+    width: 75px;
+    height: 65px;
+}
+#NavbarBottom>div>a{
+    font-weight: 600;
+}
+
+/* ------------------------------------------------ Navbar Bottom Section End ------------------------------------------------------- */
+
+
+#Faishon>a>div{
+    display: flex;
+    align-items: center;
+}
+#FashinDeopDown{
+    position: absolute;
+    z-index: 1100;
+    margin-top: 90px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border-radius: 3px;
+}
+#FashinDeopDown>div{
+    width: 150px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#FashinDeopDown>div:hover{
+    background-color: whitesmoke;
+}
+#FashinDeopDown>div>a{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+    text-align: left;
+}

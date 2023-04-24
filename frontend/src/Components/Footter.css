@@ -1,0 +1,46 @@
+/* -----------------------------------------------Footer Top--------------------------------------------------------------------- */
+#FooterTop{
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+/* -----------------------------------------------Footer Top First--------------------------------------------------------------- */
+#FooterTopFirst>h1{
+    font-size: 14px;
+    color: #848484;
+    font-family: Arial,sans-serif;
+    text-align: left;
+}
+#FooterTopFirst>h1:first-child{
+    margin-bottom: 20px;
+}
+#FooterTopFirst>h1:first-child>span{
+    font-size: 14px;
+    color: black;
+    font-family: Arial,sans-serif;
+}
+#FooterTopFirst>h1>span{
+    font-size: 11px;
+    color: #878787;
+    text-align: left;
+}
+/* -----------------------------------------------Footer Top Second------------------------------------------------------------- */
+#FooterTopSecond>h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #878787;
+    text-align: left;
+    margin-bottom: 10px;
+}
+#FooterTopSecond>p{
+    color: #878787;
+    line-height: 16px;
+    font-size: 11px;
+    text-align: left;
+    margin-bottom: 10px;
+}
