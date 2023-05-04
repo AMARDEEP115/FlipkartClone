@@ -1,0 +1,17 @@
+#DrawerItem>div>a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 35px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #353535;
+}
+#DrawerItem>div:hover{
+    background-color: whitesmoke;
+}
+#DrawerItem>div>a>img{
+    width: 15px;
+    height: 15px;
+}

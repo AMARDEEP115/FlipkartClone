@@ -1,0 +1,23 @@
+#RestPagesNavbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#RestPagesNavbar>div{
+    height: 30px;
+}
+#RestPagesNavbar>div>a{
+    font-weight: 500;
+}
+#RestPagesNavbar>div:hover{
+    color: #2874f0;
+}
+
+@media screen and (max-width: 767px) {
+    #RestPagesNavbar{
+        display: none;
+    }
+}

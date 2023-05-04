@@ -1,6 +1,6 @@
 import "./Footter.css";
 
-const Footer=()=>{
+const FooterTop=()=>{
     return <div id="FooterTop">
         <div id="FooterTopFirst">
             <h1>Top Stories :<span> Brand Directory</span></h1>
@@ -70,4 +70,4 @@ const Footer=()=>{
     </div>
 }
 
-export default Footer;
+export default FooterTop;

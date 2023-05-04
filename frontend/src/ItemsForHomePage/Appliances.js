@@ -52,3 +52,58 @@ export const Appliances={
             }
         ],
 };
+
+export const AppliancesCool={
+    title:"Appliances for a Cool Summer",
+    BackgroundImage:"https://rukminim1.flixcart.com/fk-p-flap/278/278/image/964e5530abdf3180.jpg?q=90",
+    Items:[
+            {
+                url:"https://rukminim1.flixcart.com/image/400/400/xif0q/inverter-battery/0/c/w/65-eco-volt-neo-850-inverter-rc-15000-30-luminous-original-imagg8phv6xysvk4.jpeg?q=70",
+                first:"Inverters and Accessories",
+                second:"From ₹7,249",
+                third: "Okaya, Luminous & more",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/klmmrgw0/fan/n/t/z/bullet-heavy-duty-isi-certified-50-1-400-pedestal-fan-zigma-original-imagypn3ym4jmmm9.jpeg?q=70",
+                first:"Fans",
+                second:"Min 50% Off",
+                third: "Farrata, Hawells ...",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/l432ikw0/air-cooler/5/x/f/220-50-tiara-air-cooler-with-honeycomb-pads-low-power-original-imagf2chtzfgfjgg.jpeg?q=70",
+                first:"Air Coolers",
+                second:"Min 50% Off",
+                third:"V-Gaurd, Bajaj & More",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/xif0q/mixer-grinder-juicer/m/0/j/supremus-briqre-original-imaghs6gxfedzyjn.jpeg?q=70",
+                first:"Mixer Juicer Grinder",
+                second:"Min 50% Off",
+                third:"USHA, Hawells, Ph...",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/klzhq4w0/water-purifier/b/y/e/new-audi-aqua-fresh-original-imagyzvhkbzdnzyb.jpeg?q=70",
+                first:"Water Purifiers",
+                second:"Min 50% Off",
+                third:"Best Selling",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/400/200/xif0q/air-conditioner-new/q/b/i/-original-imagmpszwckts8c3.jpeg?q=70",
+                first:"Air Conditioners",
+                second:"Min 70% Off",
+                third:"LG, Voltas, Samsun...",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/xif0q/refrigerator-new/j/7/a/-original-imagmxh2qghffxyd.jpeg?q=70",
+                first:"Refrigrators",
+                second:"Wide Range",
+                third:"LG, Kelvinator & more",
+            },
+            {
+                url:"https://rukminim1.flixcart.com/image/200/200/xif0q/electric-insect-killer/v/2/o/save-from-mosquito-fly-killer-3-sunig-original-imagngx82wmghc3b.jpeg?q=70",
+                first:"Mosquito Killers",
+                second:"Min 60% Off",
+                third:"Best Offer",
+            },
+        ],
+};

@@ -1,0 +1,33 @@
+#FourGridViewFashion{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+    grid-area: auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#FourGridViewFashion>img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1055px) {
+    #FourGridViewFashion{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width: 765px) {
+    #FourGridViewFashion{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+@media screen and (max-width: 551px) {
+    #FourGridViewFashion{
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(6,1fr); */
+    }
+}

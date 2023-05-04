@@ -1,0 +1,42 @@
+#ThreeByThreeGridP{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto;
+}
+
+#SpecificFashionPageLink{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+#SpecificFashionPageLink>a{
+    background-color: whitesmoke;
+    color: gray;
+    text-align: left;
+    padding-left: 20px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 5px;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+@media screen and (max-width: 768px) {
+    #FashionPageContent{
+        padding-top: 95px;
+    }
+    #SpecificFashionPageLink>a{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #SpecificFashionPageLink>a{
+        font-size: 17px;
+        padding-top: 13px;
+    }
+}

@@ -1,0 +1,39 @@
+#SmallScreenNavbarBottom{
+    display: grid;
+    grid-template-columns: repeat(12,100px);
+    padding-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+    overflow: scroll;
+    width: 100%;
+}
+#SmallScreenNavbarBottom>div>a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+}
+#SmallScreenNavbarBottom>div>a>img{
+    width: 75px;
+    height: 65px;
+}
+
+/* #SmallScreenNavbarBottom>div{
+    width: 300px;
+    border: 1px solid red;
+}
+#SmallScreenNavbarBottom>div>a{
+    width: fit-content;
+    height: fit-content;
+}
+#SmallScreenNavbarBottom>div>a>img{
+    width: 250px;
+    height: 60px;
+} */
+
+@media screen and (min-width:768px) and (max-width:2667px) {
+    #SmallScreenNavbarBottom{
+        display: none;
+    }
+}

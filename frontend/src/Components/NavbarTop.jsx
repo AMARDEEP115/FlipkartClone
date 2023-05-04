@@ -15,6 +15,9 @@ const NavbarTop=()=>{
     const [srch,setSrch]=useState("");
 
     const HandleSearch=()=>{
+        if(srch!==""){
+            document.getElementById("SearchedItemsFull").style.display="none";
+        }
         console.log("You Have searched for",srch);
     }
     const DropDownOn=()=>{
@@ -43,9 +46,36 @@ const NavbarTop=()=>{
             <div id="SearchBox">
                 <input type="text" placeholder="Search for products, brand and more" value={srch} onChange={(e)=>setSrch(e.target.value)}/>
                 <img src={Search} alt="Search" onClick={HandleSearch}/>
+                {srch!=="" && <div id="SearchedItemsFull">
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                    <Link>{srch}</Link>
+                </div>}
             </div>
             <div id="LoginButton" onMouseEnter={LoginDropDownOn} onMouseLeave={LoginDropDownOf}>
-                <button>Login</button>
+                <button onClick={()=>Navi("/login")}>Login</button>
                 <div id="LoginDropDown" onMouseEnter={LoginDropDownOn} onMouseLeave={LoginDropDownOf} style={{display:"none"}}>
                     <Link to="/mobiles"><h1>New customer?</h1>Sign Up</Link>
                     <Link><MdAccountCircle  color="#2874f0" />My Profile</Link>

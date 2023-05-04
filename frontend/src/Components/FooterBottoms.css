@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------Footer Bottom Part----------------------------------------------- */
+#FooterBottom{
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    background-color: #172337;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+/* ---------------------------------------------------------Footer Bottom Top Part------------------------------------------- */
+#FooterBottomTop{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FooterBottomTop>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#FooterBottomTop>div>h1{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+#FooterBottomTop>div>p{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+#FooterBottomTop>div>p>a{
+    color: #2874f0;
+    font-weight: 500;
+}
+#FooterBottomTop>div>a{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+#FooterBottomTop>div>a:hover{
+    text-decoration: underline;
+}
+#Hr{
+    border: 1px solid #454d5e;
+    height: 150px;
+}
+
+/* -------------------------------------------------------Footer Bottom Bottom Part------------------------------------------ */
+#FooterBottom>hr{
+    margin-top: 30px;
+    border: 1px solid #454d5e;
+}
+#FooterBottomBottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#FooterBottomBottom>p{
+    color: white;
+    font-size: 14px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#FooterBottomBottom>p>svg{
+    color: #f1d27d;
+}
+
+
+@media screen and (min-width:415px) and (max-width:1015px) {
+    #FooterBottomTop{
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    #Hr{
+        height: 1px;
+    }
+    #FooterBottomBottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    #FooterBottom{
+        display: none;
+    }
+}

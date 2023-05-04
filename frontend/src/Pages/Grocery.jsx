@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar";
 const Grocery=()=>{
     return <div>
         <Navbar/>
-        <Heading>Grocery</Heading>
+        <Heading style={{paddingTop:"100px"}}>Grocery</Heading>
     </div>
 }
 

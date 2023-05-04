@@ -1,0 +1,105 @@
+/* -----------------------------------------------Small Screen Navbar Top Section-------------------------------------------------- */
+#SmallScreenNavbarTop{
+    background-color: #2874f0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1200;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    gap: 10px;
+    height: 104px;
+    margin-top: -7px;
+}
+/* --------------------------------------------Small Screen Navbar Top Logo Section------------------------------------------------ */
+#Logoo{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin: auto;
+}
+#Logoo>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#Logoo>div>img{
+    width: 80px;
+}
+#Logoo>div>svg{
+    font-size: 20px;
+    color: white;
+}
+#Logoo>div>a>svg{
+    font-size: 20px;
+}
+#Logoo>div>a{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+/* --------------------------------------Small Screen Navbar Top Search box Section--------------------------------------------- */
+#SearchBoxx{
+    background-color: white;
+    height: 40px;
+    width: 99%;
+    margin: auto;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+#SearchBoxx>input:focus{
+    outline: none;
+}
+#SearchBoxx>input{
+    padding-left: 7px;
+    width: 100%;
+    height: 100%;
+}
+#SearchBoxx>img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#SearchedItemsSmall{
+    position: absolute;
+    z-index: 1300;
+    background-color: white;
+    width: 60%;
+    height: 300px;
+    margin-top: 338px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+#SearchedItemsSmall>a{
+    height: 35px;
+    text-align: left;
+    padding-left: 20px;
+}
+#SearchedItemsSmall>a:hover{
+    background-color: whitesmoke;
+    color: #2874f0;
+}
+
+/* -----------------------------------------------------Small Screen Dispaly-------------------------------------------------------- */
+
+@media screen and (min-width:767px) and (max-width:2667px) {
+    #SmallScreenNavbarTop{
+        display: none;
+    }
+}
+
+@media screen and (min-width:242px) and (max-width:343px) {
+    #SearchBoxx>input{
+        width: 82%;
+    }
+    #SearchBoxx{
+        justify-content: space-between;
+    }
+    #SearchedItemsSmall{
+        width: 88%;
+    }
+}

@@ -1,0 +1,37 @@
+#ScrollingDiv{
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+    /* padding: 5px; */
+}
+#ScrollingDiv>img{
+    width: 40vw;
+}
+
+#ScrollingDiv::-webkit-scrollbar {
+    /* width: 20px; */
+    height: 10px;
+}
+  
+  /* Track */
+#ScrollingDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(239, 238, 238); 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+#ScrollingDiv::-webkit-scrollbar-thumb {
+    background: #1460da;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+#ScrollingDiv::-webkit-scrollbar-thumb:hover {
+    background: #236ce0; 
+}
+
+@media screen and (max-width: 768px) {
+    #ScrollingDiv::-webkit-scrollbar {
+        height: 0px;
+    }
+}

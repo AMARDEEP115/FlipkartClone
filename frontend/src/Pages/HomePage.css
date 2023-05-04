@@ -1,13 +1,21 @@
 #HomePage{
     background-color: #f1f3f6;
+    padding: 0px;
+    margin: 0px;
 }
 /*----------------------------------- Sliding Images Css------------------------------------------------- */
+#ImageSliding{
+    width: 100%;
+}
 #SlidingImg{
     margin-top: 7px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+#SlidingImg>img{
+    height: 100%;
 }
 /*----------------------------------- Sliding Images Next & Previous button Css------------------------------------------------- */
 #SlidingImg>div{
@@ -33,3 +41,66 @@
     height: 120px;
     width: 50px;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------------Small Screen Home Page----------------------------------------------------- */
+
+/* ---------------------------------------------------------Starts----------------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:2670px) {
+    #ImageSliding{
+        height: 200px;
+    }
+    #ImageSlidingSmall{
+        display: none;
+    }
+    .SingleGrid{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1070px) {
+    #ImageSliding{
+        height: 200px;
+    }
+}
+@media screen and (max-width:767px) {
+    /* #SlidingImg>div{
+        display: none;
+    } */
+    .NPimg{
+        height: 60px;
+        width: 30px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .NPimg>svg{
+        height: 60px;
+        width: 20px;
+        display: block;
+        margin: auto;
+    }
+    #ImageSliding{
+        display: none;
+    }
+    .SingleGrid{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:425px) {
+    .NPimg{
+        height: 40px;
+        width: 20px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .NPimg>svg{
+        height: 40px;
+        width: 20px;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* ----------------------------------------------------------Ends------------------------------------------------------------ */

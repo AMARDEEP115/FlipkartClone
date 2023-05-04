@@ -1,0 +1,86 @@
+#HomePageSmallScreenFourGrid{
+    margin-top: 15px;
+}
+
+/* ----------------------------------------Top Box------------------------------------------- */
+
+#Top{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Top>div{
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    width: 25px;
+    min-height: fit-content;
+    max-height: 300px;
+    font-weight: 600;
+}
+/* ----------------------------------------Bottom Box Grid View------------------------------------------- */
+#Bottom{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+#Bottom>div{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5%;
+    height: 60vw;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+#Bottom>div>img{
+    /* width: 95%; */
+    height: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 5px;
+}
+#Bottom>div>p{
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#Bottom>div>p:last-child{
+    color: rgb(0, 140, 0);
+}
+
+@media screen and (min-width:768px) and (max-width:2660px) {
+    #HomePageSmallScreenFourGrid{
+        display: none;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    #Bottom>div>p{
+        font-size: 18px;
+        margin-top: 12px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width:242px) and (max-width:425px) {
+    #Bottom>div>p{
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

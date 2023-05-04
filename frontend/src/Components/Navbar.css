@@ -1,3 +1,8 @@
+#Navbar{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
 /* ------------------------------------------------ Navbar Top Section Start ---------------------------------------------------------- */
 #NavbarTop{
     background-color: #2874f0;
@@ -7,6 +12,10 @@
     height: 56px;
     padding-left: 9%;
     padding-right: 7.5%;
+    position: fixed;
+    z-index: 1200;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /*                                    Flipkart Logo                                    */
 #FlipLogo{
@@ -49,6 +58,27 @@
     height: 65%;
     margin-right: 5px;
 }
+#SearchedItemsFull{
+    position: absolute;
+    z-index: 1300;
+    background-color: white;
+    width: 35%;
+    height: 300px;
+    margin-top: 338px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+#SearchedItemsFull>a{
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+}
+#SearchedItemsFull>a:hover{
+    background-color: whitesmoke;
+    color: #2874f0;
+}
+
 /*                                    NavbarTop Login Button                                    */
 #LoginButton{
     height: 100%;
@@ -160,10 +190,11 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 10px;
+    padding-top: 70px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     padding-bottom: 10px;
     background-color: white;
+    width: 100%;
 }
 #NavbarBottom>div{
     display: flex;
@@ -212,3 +243,29 @@
     padding-top: 7px;
     text-align: left;
 }
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------------Small Screen Navbar-------------------------------------------------------- */
+
+/* ---------------------------------------------------------Starts----------------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:1070px) {
+    #LoginButton>button{
+        width: 70px;
+    }
+    #SearchBox{
+        width: 200px;
+    }
+}
+@media screen and (max-width:767px) {
+    #NavbarTop{
+        display: none;
+    }
+    #NavbarBottom{
+        display: none;
+    }
+}
+/* ----------------------------------------------------------Ends------------------------------------------------------------ */
